@@ -1,0 +1,17 @@
+confirmable button.btn, confirmable button.btn:visited, confirmable button.btn:hover, confirmable button.btn:active, confirmable button.btn:focus, confirmable, confirmable:visited, confirmable:hover, confirmable:active, confirmable:focus {
+  color: white !important;
+  outline: none; }
+
+confirmable[confirmable-state="unconfirmed"] button, confirmable[confirmable-state="unconfirmed"] button:visited, confirmable[confirmable-state="unconfirmed"] button:hover, confirmable[confirmable-state="unconfirmed"] button:active, confirmable[confirmable-state="unconfirmed"] button:focus {
+  background-color: crimson;
+  border-color: #ad102f; }
+
+confirmable[confirmable-state="confirming"] button, confirmable[confirmable-state="confirming"] button:visited, confirmable[confirmable-state="confirming"] button:hover, confirmable[confirmable-state="confirming"] button:active, confirmable[confirmable-state="confirming"] button:focus {
+  outline: none;
+  background-color: goldenrod;
+  border-color: #c4941d; }
+
+confirmable[confirmable-state="confirmed"] button, confirmable[confirmable-state="confirmed"] button:visited, confirmable[confirmable-state="confirmed"] button:hover, confirmable[confirmable-state="confirmed"] button:active, confirmable[confirmable-state="confirmed"] button:focus {
+  outline: none;
+  background-color: darkolivegreen;
+  border-color: #39481f; }

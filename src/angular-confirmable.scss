@@ -1,0 +1,37 @@
+confirmable button.btn, confirmable {
+  &, &:visited, &:hover, &:active, &:focus {
+    color: white !important;
+    outline: none;
+  }
+}
+
+// example of CSS for confirm-action buttons (will apply globally)
+confirmable[confirmable-state="unconfirmed"] button {
+
+  $color: crimson;
+
+  &, &:visited, &:hover, &:active, &:focus {
+    background-color: $color;
+    border-color: darken($color, 10%);
+  }
+}
+
+confirmable[confirmable-state="confirming"] button {
+  $color: goldenrod;
+
+  &, &:visited, &:hover, &:active, &:focus {
+    outline: none;
+    background-color: $color;
+    border-color: darken($color, 5%);
+  }
+}
+
+confirmable[confirmable-state="confirmed"] button {
+  $color: darkolivegreen;
+
+  &, &:visited, &:hover, &:active, &:focus {
+    outline: none;
+    background-color: $color;
+    border-color: darken($color, 10%);
+  }
+}
