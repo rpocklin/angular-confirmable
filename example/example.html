@@ -5,8 +5,8 @@
   <div class="form-group">
   <span ng-if="!reset">
 
-    <confirmable when-confirmed="confirmed" text-before="(" text-after=")" unconfirmed-text="Don't press this button"
-                    confirming-text="Please don't click me again!" confirmed-text="Formatting your hard disk...">
+    <confirmable when-confirmed="confirmed" text-before="(" text-after=")" unconfirmed-text="You don't wanna do this ..."
+                    confirming-text="You *REALLY* don't wanna do this!" confirmed-text="Closing your bank account ...">
 
       <button class="btn btn-default">
         <confirmable-outlet></confirmable-outlet>
@@ -14,7 +14,7 @@
 
     </confirmable>
 
-    <button ng-if="done" class="btn btn-success">Format complete!</button>
+    <button ng-if="done" class="btn btn-success">Closed!</button>
   </span>
     <button class="btn btn-info" ng-click="resetState()">Reset</button>
   </div>
