@@ -118,6 +118,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'build', 'coveralls'
+    'build',
+    //'coveralls'
   ]);
 };
