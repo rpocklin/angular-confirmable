@@ -1,3 +1,5 @@
+// example of CSS for confirm-action buttons (will apply globally)
+
 confirmable button.btn, confirmable {
   &, &:visited, &:hover, &:active, &:focus {
     color: white !important;
@@ -5,7 +7,6 @@ confirmable button.btn, confirmable {
   }
 }
 
-// example of CSS for confirm-action buttons (will apply globally)
 confirmable[confirmable-state="unconfirmed"] button {
 
   $color: crimson;

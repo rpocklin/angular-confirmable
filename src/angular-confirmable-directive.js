@@ -1,6 +1,6 @@
 'use strict';
 
-// NOTE: When 'disabled' (if used) is set to true, this will reset the state when 'disabled' is set back to false.
+// NOTE: When 'disabled' (if used) is set to true, this will reset the state when 'disabled' is set back to false,
 
 (function() {
 
