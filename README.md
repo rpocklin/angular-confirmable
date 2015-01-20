@@ -1,15 +1,15 @@
 # Angular Confirmable
 
 An intuitive way to re-confirm user intentions using a single widget, and provide inline feedback without
-confirm dialogs or flash messages.
+distracting confirmation popups or flash messages.
 
 Allows you to decorate a standard HTML button with 2 or 3 states, to allow the user to re-confirm their
-intent again before performing a destructive or important operation.  Can also be used to simply confirm or
+intent before performing a destructive or important operation.  Can also be used to simply confirm or
 feedback an action to the user on the same button they clicked.  If you define it with 3 states, the directive
 will reset the state back after a time period (configurable).
 
 This behaviour allows you to conserve space on the current view, without taking the users attention away from
-what they are currently actioning, and avoids distracting confirmation popups and flash messages.
+what they are currently doing and avoids distracting confirmation popups and flash messages.
 
 Tested and can be used with / without JQuery / Bootstrap.
 
@@ -25,7 +25,7 @@ Tested and can be used with / without JQuery / Bootstrap.
 
   `bower install angular-confirmable --save`
 
-1. Include `angular-confirmable.css` in your app:
+1. Include `angular-confirmable.css` in your app (optional, this demonstrates CSS class customisation using Bootstrap):
 
   `<link rel="stylesheet" href="bower_components/angular-confirmable/angular-confirmable.css" />`
 
@@ -37,8 +37,8 @@ Tested and can be used with / without JQuery / Bootstrap.
 
   `var myapp = angular.module('myapp', ['angular-confirmable']);`
 
-1. Define a `<confirmable ...>` tag with matching open and closing tags.
-1. Within the above open and closing tags, define a `<confirmable-outlet></confirmable-outlet>` which will mark
+1. Define a `<confirmable ...></confirmable>` tag with matching open and closing tags.
+1. Nested within the above open and closing tags, define a `<confirmable-outlet></confirmable-outlet>` which will mark
    where the dynamic text appears.  This allows the directive to be very flexible in what you wrap around it (ie. button / div / whatever).
 1. Define the default (unconfirmed) text with `unconfirmed-text="Do something irreversable"`
 1. Define the text to show after a single click (confirming) with `confirming-text="Are you sure?"`
@@ -60,8 +60,8 @@ Complete (minimal) example:
 ## Notes
 
 - You can use either the SASS styles directly file under `/src` or the compiled CSS files, up to you :)
-- You can use this directive for a either a re-confirmable action (3 states) or inline feedback (2 states) or both.
-- You can wrap the text in brackets, or anything really using the following optional attributes: `text-before="("` and `text-after=")"`
+- You can use this directive for either a re-confirmable action (3 states) or inline feedback (2 states) or both.
+- You can wrap the text in all states within brackets, or anything really using the following optional attributes: `text-before="("` and `text-after=")"`
 - You can define the delay between reverting from `confirming` state to `default` state by specifying `reset-delay="1000"` (in milliseconds)
 - `<confirmable>` tag supports `class="..."` and `disabled="true|false"` attributes an acts as you would assume.
 - The attribute `confirmable-state` will change to either `unconfirmed`, `confirming` or `confirmed` which can be used
