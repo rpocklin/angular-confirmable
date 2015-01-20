@@ -37,6 +37,8 @@ Tested and can be used with / without JQuery / Bootstrap.
 
   `var myapp = angular.module('myapp', ['angular-confirmable']);`
 
+## Creating the Directive
+
 1. Define a `<confirmable ...></confirmable>` tag with matching open and closing tags.
 1. Nested within the above open and closing tags, define a `<confirmable-outlet></confirmable-outlet>` which will mark
    where the dynamic text appears.  This allows the directive to be very flexible in what you wrap around it (ie. button / div / whatever).
@@ -60,11 +62,16 @@ Complete (minimal) example:
 ## Notes
 
 - You can use either the SASS styles directly file under `/src` or the compiled CSS files, up to you :)
-- You can use this directive for either a re-confirmable action (3 states) or inline feedback (2 states) or both.
-- You can wrap the text in all states within brackets, or anything really using the following optional attributes: `text-before="("` and `text-after=")"`
-- You can define the delay between reverting from `confirming` state to `default` state by specifying `reset-delay="1000"` (in milliseconds)
-- `<confirmable>` tag supports `class="..."` and `disabled="true|false"` attributes an acts as you would assume.
-- The attribute `confirmable-state` will change to either `unconfirmed`, `confirming` or `confirmed` which can be used
+- You can use this directive for either a re-confirmable action (3 states) or inline feedback
+  (2 states) or both.
+- You can wrap the text in all states within brackets, or anything really using the following
+  optional attributes: `text-before="("` and `text-after=")"`
+- You can define the delay between reverting from `confirming` state to `default` state
+  by specifying `reset-delay="1000"` (in milliseconds)
+- `<confirmable>` tag supports `class="..."` and `disabled="true|false"` attributes
+  an acts as you would assume.
+- The attribute `confirmable-state` will change to either `unconfirmed`, `confirming`
+  or `confirmed` which can be used.
   for CSS class styles or watching on the `$scope` to trigger other effects.
 
 - Specifically tested with the [angular-ladda](https://github.com/remotty/angular-ladda) directive in mind,
