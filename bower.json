@@ -16,6 +16,7 @@
   "ignore": [
     "**/.*",
     "*.yml",
+    "src/*.spec.js",
     ".jshintrc",
     "node_modules",
     "bower_components",
