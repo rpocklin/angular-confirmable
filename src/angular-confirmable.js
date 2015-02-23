@@ -1,13 +1,13 @@
 'use strict';
 angular.module('angular-confirmable', []);// Source: src/angular-confirmable-directive.js
-// NOTE: When 'disabled' (if used) is set to true, this will reset the state when 'disabled' is set back to false.
+// NOTE: When 'disabled' (if used) is set to true, this will reset the state when 'disabled' is set back to false,
 
 (function() {
 
   angular.module('angular-confirmable').directive(
     'confirmable', function($timeout) {
       return {
-        restrict: 'E',
+        restrict: 'AE',
         transclude: true,
         scope: {
           'textBefore': '@?',

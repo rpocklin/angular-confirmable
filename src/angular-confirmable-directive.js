@@ -7,7 +7,7 @@
   angular.module('angular-confirmable').directive(
     'confirmable', function($timeout) {
       return {
-        restrict: 'E',
+        restrict: 'AE',
         transclude: true,
         scope: {
           'textBefore': '@?',
