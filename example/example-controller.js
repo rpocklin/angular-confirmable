@@ -17,7 +17,7 @@ var ExampleCtrl = function($scope, $timeout) {
       $timeout(
       function() {
         $scope.done = true;
-      }, 1000, true
+      }, 2000, true
       );
     };
   };
