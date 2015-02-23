@@ -99,6 +99,7 @@ Complete (minimal) example:
 
 ## History
 
+1.1.0 Allow directive to be used in attributes as well as elements.
 1.0.0 Initial release
 
 
