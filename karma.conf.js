@@ -20,8 +20,7 @@ module.exports = function(config) {
       'bower_components/jasmine-sinon/lib/jasmine-sinon.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
-      'src/**/*.html',
-      'src/**/*.js'
+      'src/angular-confirmable.js'
     ],
 
     exclude:   [],
