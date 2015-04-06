@@ -2,6 +2,7 @@
   "name": "angular-confirmable",
   "description": "An intuitive way to re-confirm user intentions using a single widget, and provide inline feedback without confirm dialogs or flash messages.",
   "homepage": "https://github.com/rpocklin/angular-confirmable",
+  "author": "Robert Pocklington <rpocklin@gmail.com>",
   "repository": {
     "type": "git",
     "url": "http://github.com/rpocklin/angular-confirmable"
@@ -9,7 +10,6 @@
   "keywords": [
     "angular, confirm, confirmable, popup, warning, form, bootstrap"
   ],
-  "author": "Robert Pocklington <rpocklin@gmail.com>",
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
