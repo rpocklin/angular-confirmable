@@ -1,5 +1,7 @@
 # Angular Confirmable
 
+[![Build Status](https://secure.travis-ci.org/rpocklin/angular-confirmable.svg)](http:/travis-ci.org/rpocklin/angular-confirmable)
+
 An intuitive way to re-confirm user intentions using a single widget, and provide inline feedback without
 distracting confirmation popups or flash messages.
 
@@ -105,7 +107,9 @@ Complete (minimal) example:
 
 ## TODO
 
+- Add disabled button toggle to example
 - Add some tests
+- Add ngdocs
 - Move directive sanity checks to `compile()` method.
 - More sophisticated examples, also one with `angular-ladda`.
 - Allow the confirmed state to pass a promise which, when resolved, will show `completed-text="Processing Complete"`?
