@@ -5,8 +5,9 @@
   "author": "Robert Pocklington <rpocklin@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "http://github.com/rpocklin/angular-confirmable"
+    "url": "http://github.com/rpocklin/angular-confirmable.git"
   },
+  "main": ["src/angular-confirmable.js", "src/angular-confirmable.css"],
   "keywords": [
     "angular, confirm, confirmable, popup, warning, form, bootstrap"
   ],
