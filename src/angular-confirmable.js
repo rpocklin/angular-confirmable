@@ -5,7 +5,7 @@ angular.module('angular-confirmable', []);// Source: src/angular-confirmable-dir
 (function() {
 
   angular.module('angular-confirmable').directive(
-    'confirmable', function($timeout) {
+    'confirmable', ['$timeout', function($timeout) {
       return {
         restrict: 'AE',
         transclude: true,
@@ -157,6 +157,6 @@ angular.module('angular-confirmable', []);// Source: src/angular-confirmable-dir
           );
         }
       };
-    }
+    }]
   );
 }());

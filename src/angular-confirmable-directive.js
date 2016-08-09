@@ -5,7 +5,7 @@
 (function() {
 
   angular.module('angular-confirmable').directive(
-    'confirmable', function($timeout) {
+    'confirmable', ['$timeout', function($timeout) {
       return {
         restrict: 'AE',
         transclude: true,
@@ -157,6 +157,6 @@
           );
         }
       };
-    }
+    }]
   );
 }());
